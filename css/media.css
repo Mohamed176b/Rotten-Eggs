@@ -1,0 +1,104 @@
+/* Small screen + Mobile */
+@media(min-width:768px){
+    .contanier {
+        width: 750px;
+    }
+}
+/* Mudiem */
+@media(min-width:992px){
+    .contanier {
+        width: 970px;
+    }
+}
+/* Large */
+@media(min-width:1200px){
+    .contanier {
+        width: 1170px;
+    }
+}
+@media(max-width:768px) {
+    .main-ul a {
+        font-size: 10px;
+    }
+    .header .contanier .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .header .contanier {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .sec-ul {
+        width: 150px;
+    }
+    .main-ul li::after {
+        display: none;
+    }
+    .header .links .sec-ul li a{
+        padding-bottom: 5px;
+        position: relative;
+    }
+    .header .links .sec-ul li a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: .5px;
+        background-color: black;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+@media(max-width:768px) {
+    .main .contanier {
+        margin: 0 auto;
+    }
+    .main .contanier img {
+        display: none;
+    }
+    .main .contanier {
+        text-align: center;
+    }
+    .main .contanier .content .text .p-content::before {
+        display: none;
+    }
+    .main .contanier .main-title h1 {
+        font-size: 20px;
+    }
+    .main .contanier .main-title h1:first-child::after {
+        width: 5px;
+        height: 5px;
+        top: 50%;
+        left: 46.5%;
+    }
+    .main .contanier .content .text .title {
+        font-size: 18px;
+    }
+    .main .contanier .content .text {
+        font-size: 15px;
+    }
+}
+/* Small screen + Mobile */
+@media (max-width:400px){
+    .contanier {
+        width: 750px;
+    }
+    .art-sec .contanier {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .art-sec a {
+        margin-left: 0px;
+    }
+}
+/* Mudiem */
+@media(max-width:992px){
+    .contanier {
+        width: 970px;
+    }
+}
+/* Large */
+@media(min-width:1200px){
+    .contanier {
+        width: 1170px;
+    }
+}
