@@ -37,7 +37,6 @@
 }
 .main .contanier .content {
     align-items: center;
-    justify-content: center;
 }
 @media (max-width:400px) {
     .main .contanier img {
@@ -45,6 +44,7 @@
     }
     .main .contanier .content {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .main .contanier .main-title h1:first-child::after {
         display: none;
