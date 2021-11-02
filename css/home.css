@@ -290,6 +290,7 @@ hr {
     margin-left: 20px;
     background-color: var(--head-comp-color);
     width: fit-content;
+    height: fit-content;
 }
 .one {
     grid-row: 2;

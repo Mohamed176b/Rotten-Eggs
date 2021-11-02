@@ -1,0 +1,69 @@
+:root {
+    --body-background: #2e2e41;
+    --main-background: #4d3347;
+    --sec-background: #2b2b2b;
+    --head-comp-color: #86112e;
+    --head-ul-ul: #5a5a5b;
+}
+
+.main .contanier .content .text .p-content {
+    margin-left: 20px;
+}
+.main .contanier .content img {
+    border-color: var(--head-comp-color);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 20% 0%;
+}
+
+.art-sec .article .art a {
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+.ra-ye-bu {
+    display: flex;
+    align-items: baseline;
+}
+.ra-ye-bu .rate,
+.ra-ye-bu .year {
+    font-size: 25px;
+}
+.fa-star {
+    color: gold;
+}
+.ra-ye-bu span {
+    font-weight: bold;
+}
+.main .contanier .content {
+    align-items: center;
+}
+@media (max-width:400px) {
+    .main .contanier img {
+        display: block;
+    }
+    .main .contanier .content {
+        flex-wrap: wrap;
+    }
+    .main .contanier .main-title h1:first-child::after {
+        display: none;
+    }
+    .main .contanier .main-title h1 {
+        font-size: 15px;
+    }
+    p {
+        margin-top: 15px;
+    }
+    .art-sec .article .art a {
+        font-size: 19px;
+        margin: 10px;
+    }
+    .ra-ye-bu .rate, 
+    .ra-ye-bu .year {
+        font-size: 20px;
+    }
+    .ra-ye-bu .rate {
+        display: flex;
+        align-items: center;
+    }
+}
