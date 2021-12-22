@@ -273,9 +273,13 @@ hr {
     font-weight: 700;
     font-size: 30px;
 }
+
 .art-sec .contanier .article {
     background-color: var(--sec-background);
+    counter-increment: conter;
+    position: relative;
 }
+
 .art-sec .main-title {
     grid-column: 1 / span 2;
     grid-row: 1;

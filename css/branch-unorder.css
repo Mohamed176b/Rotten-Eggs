@@ -44,6 +44,7 @@
     }
     .main .contanier .content {
         flex-wrap: wrap;
+        justify-content: center;
     }
     .main .contanier .main-title h1:first-child::after {
         display: none;
