@@ -50,13 +50,13 @@ body {
 ::selection {
     color: tomato;
 }
-/*Small screen + Mobile */
-@media(min-width:768px){
-    .contanier {
-        width: 750px;
+/* Mudiem */
+@media (max-width:991px) {
+    .art-sec .article {
+        width: 360px;
+        left: 90px;
     }
 }
-/* Mudiem */
 @media(min-width:992px){
     .contanier {
         width: 970px;
@@ -257,9 +257,10 @@ hr {
     min-width: 306px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(7, auto);
     row-gap: 20px;
+    align-items: center;
 }
 .art-sec .contanier .main-title,
 .art-sec .contanier .article {
@@ -446,7 +447,7 @@ hr {
 }
 /* End footer */
 /* End CSS code */
-@media (max-width:400px){
+@media (max-width:768px){
     .art-sec .contanier {
         display: flex;
         flex-direction: column;
@@ -544,5 +545,9 @@ hr {
     }
     .contact .contanier .contact-sec {
         margin: 5px 0px;
+    }
+    .art-sec .article {
+        width: fit-content;
+        left: 0px;
     }
 }

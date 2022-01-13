@@ -1,22 +1,22 @@
 /* Small screen + Mobile */
-@media(min-width:768px){
+/* @media(min-width:768px){
     .contanier {
         width: 750px;
     }
-}
+} */
 /* Mudiem */
-@media(min-width:992px){
+/* @media(min-width:992px){
     .contanier {
         width: 970px;
     }
-}
+} */
 /* Large */
-@media(min-width:1200px){
+/* @media(min-width:1200px){
     .contanier {
         width: 1170px;
     }
-}
-@media(max-width:768px) {
+} */
+/* @media(max-width:768px) {
     .main-ul a {
         font-size: 10px;
     }
@@ -75,9 +75,9 @@
     .main .contanier .content .text {
         font-size: 15px;
     }
-}
+} */
 /* Small screen + Mobile */
-@media (max-width:400px){
+/* @media (max-width:400px){
     .contanier {
         width: 750px;
     }
@@ -89,16 +89,16 @@
     .art-sec a {
         margin-left: 0px;
     }
-}
+} */
 /* Mudiem */
-@media(max-width:992px){
+/* @media(max-width:992px){
     .contanier {
         width: 970px;
     }
-}
+} */
 /* Large */
-@media(min-width:1200px){
+/* @media(min-width:1200px){
     .contanier {
         width: 1170px;
     }
-}
+} */

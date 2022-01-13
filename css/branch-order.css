@@ -16,21 +16,23 @@
     height: 100px;
     border-width: 10px;
     font-size: 50px;
-    left: 720px;
+    left: 660px;
     top: -55px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media (max-width:400px){
+@media (max-width:992px) {
     .art-sec .contanier .article::before {
-        left: 257px;
-        top: -20px;
+        position: sticky;
+        margin-right: -20px;
+        margin-top: -20px;
         width: 50px;
         height: 50px;
         border-width: 8px;
         font-size: 30px;
-        border-radius: 50% 0% 0% 50%;
+        border-radius: 0% 0% 0% 50%;
+        z-index: 500;
     }
 }
 .art-sec .etr img {
@@ -38,5 +40,5 @@
 }
 .art-sec .seconde-title {
     grid-column: 1 / span 2;
-    grid-row: 35;
+    grid-row: 33;
 }
