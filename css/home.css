@@ -30,8 +30,6 @@
 /* Start main rules [Must be in any page] */
 /*Start global rules */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 html {
@@ -46,6 +44,9 @@ body {
 .contanier {
     padding: 0 15px;
     margin: 0 auto;
+}
+::-moz-selection {
+    color: tomato;
 }
 ::selection {
     color: tomato;
@@ -213,6 +214,8 @@ hr {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 .main .contanier .content .text {
     direction: rtl;
@@ -245,7 +248,22 @@ hr {
     left: 50%;
     z-index: -1;
 }
-
+.logo-index {
+    animation: logo-index;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+}
+@keyframes logo-index {
+    from {
+        scale: 100%;
+    }
+    to {
+        scale: 90%;
+    }
+}
 /* End main section */
 /* Start article section */
 .art-sec {
@@ -294,7 +312,11 @@ hr {
     overflow: hidden;
     margin-left: 20px;
     background-color: var(--head-comp-color);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 .one {
@@ -315,12 +337,17 @@ hr {
 .six {
     grid-row: 7;
 }
+.eternals {
+    max-width: 300px !important; 
+}
 .art-sec a img {
     transition: .8s;
+    width: 300px;
 }
 .art-sec a img:hover {
     transform: rotate(-10deg) scale(130%);
-    filter: blur(1px);
+    -webkit-filter: blur(1px) grayscale(100%);
+            filter: blur(1px) grayscale(100%);
 }
 .art-sec .article {
     text-align: center;
@@ -445,6 +472,30 @@ hr {
 .foot .contanier .copyright span {
     color: red;
 }
+/* CSS code for the button style */
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 5px; 
+    right: 20px; 
+    z-index: 501; 
+    border: none; 
+    outline: none; 
+    background-color: var(--main-background); 
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 5px;
+    width: 60px;
+    border: #242424 1px solid;
+}
+
+#myBtn:hover {
+    background-color: var(--sec-background);
+}
+#myBtn svg {
+    font-size: 30px;
+}
 /* End footer */
 /* End CSS code */
 @media (max-width:768px){
@@ -510,9 +561,9 @@ hr {
     .main .contanier {
         margin: 0 auto;
     }
-    .main .contanier img {
+    /* .logo-index {
         display: none;
-    }
+    } */
     .main .contanier {
         text-align: center;
     }
@@ -547,7 +598,76 @@ hr {
         margin: 5px 0px;
     }
     .art-sec .article {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         left: 0px;
     }
+    #myBtn {
+        bottom: 75px;
+        left: auto;
+    }
+    .main .contanier .content {
+    flex-direction: column-reverse;
 }
+}
+/* Start foo */
+.content-foo {
+    background-color: var(--head-comp-color);
+    padding: 40px 0px;
+    border: black solid 1px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.content-foo p{
+    font-size: 40px;
+    font-weight: bold;
+}
+.logos-foo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.egg {
+    animation: foo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+}
+.logos-foo img:nth-child(2) {
+    animation: foo2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-delay: 1.5s;
+}
+@keyframes foo {
+    from {
+        margin-right: 0px;
+    }
+    to {
+        margin-right: 100px;
+    }
+}
+@keyframes foo2 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+@media (max-width:768px){
+    .logos-foo img {
+        width: 100px !important;
+    }
+}
+/* End foo */
