@@ -113,7 +113,7 @@ async function getAvailableGenres() {
 }
 
 async function getMoviesByGenre(value) {
-    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-by-genre?genre=${value}`, "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "dae9e3d3-6b6c-4fde-b298-ada2806ae563", null, spinnerMovGen);
+    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-by-genre?genre=${value}`, "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "dae9e3d3-6b6c-4fde-b298-ada2806ae563", null, spinnerMovGen);
 }
 
 async function upcomingMovies() {
