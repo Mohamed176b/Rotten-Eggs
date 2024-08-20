@@ -1,211 +1,192 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="شاهد معلومات عن افضل الافلام والمسلسلات وأكثر">
-    <!-- Page Icon -->
-    <link rel="icon" href="images/egg.png">
-    <!-- Main templete css file -->
-    <link rel="stylesheet" href="css/home.css">
-    <!-- Render all elements normally -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Font awesome library -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- Google fonts -->
+    <meta name="Description" content="A comprehensive site for movies and series that allows you to explore details of cinematic and television works, including cast, ratings, and story summaries. Your reliable source for everything related to the world of cinema.">
+    <link rel="icon" href="imgs/egg.png">
+    <link rel="stylesheet" href="css/elshafey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Rotten Eggs</title>
 </head>
 <body>
-    <!-- Strat header -->
-    <header class="header">
-        <div class="contanier">
-            <img src="images/logo.png" alt="Rotten Eggs Logo" class="logo">
-            <div class="links">
-                <ul class="main-ul">
-                    <li><a href="index.html" target="_blank">الصفحة الرئيسية</a></li>
-                    <li class="sec-li">
-                        <a href="#main">الأقسام</a>
-                        <ul class="sec-ul">
-                            <li><a href="pages/marvel.html" target="_blank">عالم مارفل السينمائي</a></li>
-                            <li><a href="pages/cirsh.html" target="_blank">أفلام كريستوفر نولان</a></li>
-                            <li><a href="pages/xmen.html" target="_blank">عالم الأكس مين</a></li>
-                            <li><a href="pages/taranteno.html" target="_blank">أفلام كوينتن تارانتينو</a></li>
-                            <li><a href="pages/marawan.html" target="_blank">افلام مروان حامد</a></li>
-                            <li><a href="pages/martin.html" target="_blank">أفلام مارتن سكورسيزي</a></li>
-                        </ul>
+    <div class="header">
+        <div class="container">
+            <div>
+                <a class="logo" href="index.html">
+                    <img src="imgs/egg.png" alt="Rotten Eggs Logo">
+                    <p>Rotten <span>Eggs</span></p>
+                </a>
+            </div>
+            <div class="search">
+                <i id="mag-icon" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="search" id="search" placeholder="Search everything">
+            </div>
+            <div class="pro">
+                <div><i class="fa-regular fa-bell"></i></div>
+                <img src="imgs/profile.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="spinner"></div>
+    </div>
+    <div class="gen">
+        <div class="container">
+            <p class="sec-p">Popular By Gener</p>
+            <div class="gens"></div>
+            <div class="spinner spinner-mov-gen"></div>
+            <div class="con-arrows">
+                <div class="arrows arr-left" id="arr-left-gen">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="gen-movies"></div>
+                <div class="arrows arr-right" id="arr-right-gen">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trends">
+        <div class="container">
+            <p class="sec-p">Trending Movies</p>
+            <div class="spinner spinner-mov-trend"></div>
+            <div class="con-arrows">
+                <div class="arrows arr-left" id="arr-left-tre">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="trend-movies"></div>
+                <div class="arrows arr-right" id="arr-right-tre">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="upcoming">
+        <div class="container">
+            <div id="upcoming-movies" class="upcoming-main-div">
+                <a href="pages/upcoming.html?upcoming=movies" class="up-t-i">
+                    <p class="sec-p">Upcoming Movies</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="spinner spinner-upcoming-mov"></div>
+                <div id="up-ms-box" class="ups-box"></div>
+            </div>
+            <div id="upcoming-series" class="upcoming-main-div tv-spec">
+                <a href="pages/upcoming.html?upcoming=tvshows" class="up-t-i">
+                    <p class="sec-p">Upcoming Tv Shows</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="spinner spinner-upcoming-ser"></div>
+                <div id="up-ss-box" class="ups-box"></div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="news-outBox">
+                <a href="pages/news.html?news=movies" class="up-t-i">
+                    <p class="sec-p">Movies News</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="spinner spinner-news-mov"></div>
+                <div class="newss" id="movs-news-box">
+
+                </div>
+            </div>
+            <div class="news-outBox">
+                <a href="pages/news.html?news=celebrities" class="up-t-i">
+                    <p class="sec-p">Celebrities News</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <div class="spinner spinner-news-cel"></div>
+                <div class="newss" id="cel-news-box">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="born">
+        <div class="container">
+            <a href="pages/born.html" class="up-t-i">
+                <p class="sec-p">Born Today</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="spinner spinner-born"></div>
+            <div class="acts-born"></div>
+        </div>
+    </div>
+    <div class="trends">
+        <div class="container">
+            <p class="sec-p">Top 250 Movies</p>
+            <div class="spinner spinner-mov-top"></div>
+            <div class="con-arrows">
+                <div class="arrows arr-left" id="arr-left-top">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="top-movies"></div>
+                <div class="arrows arr-right" id="arr-right-top">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="boxOffice">
+        <div class="container">
+            <div id="upcoming-movies" class="upcoming-main-div">
+                <p class="sec-p">Top Box Office</p>
+                <div class="spinner spinner-boxOffice"></div>
+                <div id="boxOffice" class="ups-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                
+                
+                <p class="text">
+                    The site was designed and implemented by Mohamed Elshafey
+                </p>
+                <p class="text">
+                    Contact me via email or social media                
+                </p>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/mohamed-elshafey-381401216/" target="_blank" class="linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
                     </li>
-                    <li><a href="#contact">معلومات التواصل</a></li>
+                    <li>
+                        <a href="https://github.com/Mohamed176b" target="_blank"  class="github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100018162397224" target="_blank" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:Beta.ContactEM@gmail.com" class="gmail">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </header>
-    <!-- End header -->
-    <!-- Start main section -->
-    <section class="main">
-        <div class="contanier">
-            <div class="main-title">
-                <h1>
-                    <div>Rotten Eggs</div>
-                    <div>البيض الفاسد</div> 
-                </h1>
-            </div>
-            <hr>
-            <div class="content">
-                <div class="text">
-                    <div class="title">هدف الموقع</div>
-                    <p class="p-content">يقدم الموقع معلومات عن بعض الأفلام والمسلسلات.</p>
-                    <p class="p-content">ونقدم بعض من الأعمال المشهورة لبعض المخرجين.</p>
-                    <p class="p-content">ونقدم أيضا ترتيب الأفلام لبعض العوالم السينمائية كمارفل وغيره.</p>    
-                </div>
-                <img src="images/egg.png" alt="Rotten's Eggs" class="logo-index">
+            <div class="box footer-gallery">
+                <img src="imgs/egg.png" alt="img" />
+                <h3>Rooten <span class="eggs-foot">Eggs</span></h3>
             </div>
         </div>
-    </section>
-    <!-- Start main section -->
-    <!-- Start article section -->
-    <section class="art-sec" id="main">
-        <div class="contanier">
-            <div class="main-title">الأقسام</div>
-            <a href="pages/marvel.html" target="_blank" class="one">
-                <img src="https://www.movieposters.com/cdn/shop/products/avengers-infinity-war_89e0d364_480x.progressive.jpg?v=1631200474" alt="Marvel Cinematic Universe">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>عالم مارفل السينمائي</p>
-                        <hr>
-                        <p>Marvel Cinematic Universe</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>هي سلسلة أفلام ومسلسلات تقع في عالم خيالي مشترك، تتركز على سلسة أفلام أبطال خارقين، يتم إنتاجها بشكل مستقل من قبل استوديوهات مارفل، مأخوذة من الشخصيات التي تظهر في مطبوعات مارفل كومكس.</p>
-                    <a href="pages/marvel.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article>
-            <a href="pages/cirsh.html" target="_blank" class="two">
-                <img src="https://www.movieposters.com/cdn/shop/products/7dfddd911b8040729896c5be83f8e139_6e2f4149-8cb4-414c-a33b-9e0065c55af3_480x.progressive.jpg?v=1573585216" alt="Christopher Nolan movies">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>أفلام كريستوفر نولان</p>
-                        <hr>
-                        <p>Christopher Nolan movies</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>.تتميّز أفلام كريستوفر نولان بأنها ذات طابعٍ فلسفيّ واجتماعي واستكشاف الخُلُق الإنسانيّة وحقيقة الزمن والطبيعة المرنة للذاكرة والهوية</p>
-                    <a href="pages/cirsh.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article> 
-            <a href="pages/xmen.html" target="_blank" class="three">
-                <img src="https://www.movieposters.com/cdn/shop/products/63a704fcebb8d9762722816224f32ec6_0af5a760-f9eb-4538-abe2-010c9fa9c84b_480x.progressive.jpg?v=1573587546" alt="X-Men Universe">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>عالم الأكس مين</p>
-                        <hr>
-                        <p>X-Men Universe</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>.إكس مين هي سلسلة أفلام خارقة مستندة إلى قصص إكس مان الخيالية من تأليف مارفل كومكس, مبنيه على عالم من المتحولين الخارقين</p>
-                    <a href="pages/xmen.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article> 
-            <a href="pages/taranteno.html" target="_blank" class="four">
-                <img src="https://www.movieposters.com/cdn/shop/products/ff35c38cb67f47a5f4cbec6c92a5d5a8_acb37f4c-8110-4bc9-b597-01e75e565a60_480x.progressive.jpg?v=1573587558" alt="Quentin Tarantino movies">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>أفلام كوينتن تارانتينو</p>
-                        <hr>
-                        <p>Quentin Tarantino movies</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>.تَتَميز أفلام كوينتن تارانتينو بعدمْ الخطيّة في السرد وتناول المواضيع الساخرة، وتجسيد العنف المفرط، والاستفادة من توزيع أدوار متكافئ مؤلف من مؤدين مشاهير وآخرين أقل شهرة</p>
-                    <a href="pages/taranteno.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article> 
-            <a href="pages/marawan.html" target="_blank" class="five">
-                <img src="https://upload.wikimedia.org/wikipedia/ar/6/66/%D9%85%D9%84%D8%B5%D9%82_%D9%81%D9%8A%D9%84%D9%85_%D8%A7%D9%84%D9%81%D9%8A%D9%84_%D8%A7%D9%84%D8%A3%D8%B2%D8%B1%D9%82_2_%282019%29.jpg" alt="Marwan Hamed movies">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>أفلام مروان حامد</p>
-                        <hr>
-                        <p>Marwan Hamed movies</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>.مروان حامد من المخرجين الشباب الصاعدين, لديه العديد من الأفلام الجميله</p>
-                    <a href="pages/marawan.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article> 
-            <a href="pages/martin.html" target="_blank" class="six">
-                <img src="https://www.movieposters.com/cdn/shop/products/f2b592b1d46f769ab126287717725644_30f1a0ae-ef2a-4707-a28f-8b0ea2f68b5b_480x.progressive.jpg?v=1573618782" alt="Martin Scorsese films">
-            </a>
-            <article class="article">
-                <div class="title">
-                    <h2>
-                        <p>أفلام مارتن سكورسيزي</p>
-                        <hr>
-                        <p>Martin Scorsese movies</p>
-                    </h2>
-                </div>
-                <div class="art">
-                    <p>تركز أفلامه على مفاهيم مثل: فكرة الخلاص والإيمان والذكورية والجريمة وصراع العصابات. يظهر العنف في كثير من أفلامه وتستخدم الألفاظ النابية بكثافة. يعتبر من مخرجي "موجة هوليود الجديدة" التي بدأت أواخر الستينات.</p>
-                    <a href="pages/martin.html" target="_blank">شاهد أكثر</a>
-                </div>
-            </article>
-        </div>
-    </section>
-    <!-- End article section -->
-    <!-- Start contact -->
-    <section class="contact" id="contact">
-        <div class="contanier">
-            <div class="title">معلومات التواصل</div>
-            <div class="contact-sec">
-            <a href="https://www.facebook.com/profile.php?id=100018162397224" class="ico" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                    <p>Facebook</p>
-            </a>
-            <a href="mailto:moshafey18@gmail.com?subject=Contact" class="ico" target="_blank">
-                    <i class="fas fa-envelope"></i>  
-                    <p>Gmail</p>   
-            </a>
-            <a href="https://www.linkedin.com/in/mohamed-elshafey-381401216/" class="ico" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    <p>Linkedin</p>
-            </a>
-            </div>
-        </div>
-    </section>
-    <!-- End contact -->
-    <!-- Start Footer -->
-    <footer class="foot">
-        <div class="contanier">
-            <img src="images/logo.png" alt="Rotten Eggs Logo">
-            <div class="copyright">
-                &copy; 2021 Mohomaed Elshafey <span>&hearts; </span> All Right Reserved
-            </div>
-        </div>
-    </footer>
-    <!-- HTML code for the button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-            <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-        </svg>
-    </button>
-    <!-- End Footer -->
-    <script src="main.js"></script>
+        <p class="copyright">Powerd By Elshafey <span>&#10084;</span></p>
+    </div>
 </body>
+<script type="module" src="js/fetchs.js"></script>
+<script type="module" src="js/main.js"></script>
 </html>
