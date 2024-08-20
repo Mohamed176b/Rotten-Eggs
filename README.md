@@ -20,13 +20,13 @@
 - **JavaScript**: For adding interactivity and dynamic content.
 
 ### Back-End
-- **External API**: The back-end functionality is powered by an external API that provides data for movies and series. This API is used to fetch details like cast, ratings, and others...
+- **External API**: The back-end functionality is powered by an external API that provides data for movies and series. This API is used to fetch details like cast, ratings, and others. [Movies Verse](https://www.allthingsdev.co/apimarketplace/movies-verse/666d560bf86d656f8341e0a9)
 
 ## Project Highlights
 
 - **User-Friendly Interface**: The website features a clean and intuitive interface that enhances user experience.
 - **Responsive Design**: Optimized for different screen sizes, ensuring accessibility on both desktop and mobile devices.
-- **No Frameworks**: The entire website was built using pure HTML, CSS, and JavaScript without the use of any front-end frameworks, showcasing a strong foundation in core web development skills. [Movies Verse](https://www.allthingsdev.co/apimarketplace/movies-verse/666d560bf86d656f8341e0a9)
+- **No Frameworks**: The entire website was built using pure HTML, CSS, and JavaScript without the use of any front-end frameworks, showcasing a strong foundation in core web development skills. 
 
 ## Installation
 
