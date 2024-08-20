@@ -1,6 +1,7 @@
 # Rotten Eggs
 
 **Rotten Eggs** is a comprehensive website dedicated to movies and series, designed to be your reliable source for everything related to the world of cinema. The site allows users to explore detailed information about cinematic and television works, including cast members, ratings, and story summaries.
+## [See Website](https://mohamed176b.github.io/Rotten-Eggs/)
 
 ## Features
 
@@ -20,13 +21,16 @@
 - **JavaScript**: For adding interactivity and dynamic content.
 
 ### Back-End
-- **External API**: The back-end functionality is powered by an external API that provides data for movies and series. This API is used to fetch details like cast, ratings, and others. [Movies Verse](https://www.allthingsdev.co/apimarketplace/movies-verse/666d560bf86d656f8341e0a9)
+- **External API**: The back-end functionality is powered by an external API that provides data for movies and series. This API fetches details like cast, ratings, and others. [Movies Verse](https://www.allthingsdev.co/apimarketplace/movies-verse/666d560bf86d656f8341e0a9)
 
 ## Project Highlights
 
-- **User-Friendly Interface**: The website features a clean and intuitive interface that enhances user experience.
+- **User-Friendly Interface**: The website features a clean, intuitive interface that enhances user experience.
 - **Responsive Design**: Optimized for different screen sizes, ensuring accessibility on both desktop and mobile devices.
 - **No Frameworks**: The entire website was built using pure HTML, CSS, and JavaScript without the use of any front-end frameworks, showcasing a strong foundation in core web development skills. 
+
+## Note
+- I uploaded my API Keys on the project in GitHub so make the GitHub pages for the website to see him here in GitHub easily, The API keys here are not security sensitive because they are mine, open source, and just the project is mine to showcase my front-end skills.
 
 ## Installation
 
