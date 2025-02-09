@@ -101,7 +101,7 @@ async function apiRequest(method, url, key, endpoint, value = null, ...spinners)
 
 
 async function searchMovie(value) {
-    return apiRequest("POST", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/search-movies-by-query", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "06344c37-2a53-4936-be17-34568bdc31ab", value, spinnerSearch);
+    return apiRequest("POST", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/search-movies-by-query", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "06344c37-2a53-4936-be17-34568bdc31ab", value, spinnerSearch);
 }
 
 async function mostPopularMovies() {
@@ -109,7 +109,7 @@ async function mostPopularMovies() {
 }
 
 async function getAvailableGenres() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/available-genres", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp","462dfdab-8876-412d-af11-765956a494a4", null, spinnerMain);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/available-genres", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU","462dfdab-8876-412d-af11-765956a494a4", null, spinnerMain);
 }
 
 async function getMoviesByGenre(value) {
@@ -117,19 +117,19 @@ async function getMoviesByGenre(value) {
 }
 
 async function upcomingMovies() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-movies", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "4f700f4a-4bd2-4604-8d5b-7b5e4c976c65", null, spinnerUpcoming, spinnerUpcomingMov);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-movies", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "4f700f4a-4bd2-4604-8d5b-7b5e4c976c65", null, spinnerUpcoming, spinnerUpcomingMov);
 }
 
 async function upcomingSeries() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-tv-shows", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "ee6324b5-b074-419b-ac03-9b818d30321f", null, spinnerUpcoming, spinnerUpcomingSer);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-tv-shows", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "ee6324b5-b074-419b-ac03-9b818d30321f", null, spinnerUpcoming, spinnerUpcomingSer);
 }
 
 async function getMovieNews() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-movie-news", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "9f3f88f2-24e7-486e-8360-0c8d1f223079", null, spinnerNews, spinnerNewsMov);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-movie-news", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "9f3f88f2-24e7-486e-8360-0c8d1f223079", null, spinnerNews, spinnerNewsMov);
 }
 
 async function getCelebritiesNews() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-celebrities-news", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "310bc946-0139-4f0d-a955-1f7ab9e122c9", null, spinnerNews, spinnerNewCel);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-celebrities-news", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "310bc946-0139-4f0d-a955-1f7ab9e122c9", null, spinnerNews, spinnerNewCel);
 }
 
 async function getBornToday() {
