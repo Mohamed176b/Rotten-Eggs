@@ -101,50 +101,50 @@ async function apiRequest(method, url, key, endpoint, value = null, ...spinners)
 
 
 async function searchMovie(value) {
-    return apiRequest("POST", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/search-movies-by-query", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "06344c37-2a53-4936-be17-34568bdc31ab", value, spinnerSearch);
+    return apiRequest("POST", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/search-movies-by-query", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "06344c37-2a53-4936-be17-34568bdc31ab", value, spinnerSearch);
 }
 
 async function mostPopularMovies() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/most-popular-movies", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU","611cdfda-546d-4cc9-91ab-bfdac3194613", null , spinnerMain, spinnerMovTrend);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/most-popular-movies", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P","611cdfda-546d-4cc9-91ab-bfdac3194613", null , spinnerMain, spinnerMovTrend);
 }
 
 async function getAvailableGenres() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/available-genres", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU","462dfdab-8876-412d-af11-765956a494a4", null, spinnerMain);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/available-genres", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P","462dfdab-8876-412d-af11-765956a494a4", null, spinnerMain);
 }
 
 async function getMoviesByGenre(value) {
-    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-by-genre?genre=${value}`, "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "dae9e3d3-6b6c-4fde-b298-ada2806ae563", null, spinnerMovGen);
+    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-by-genre?genre=${value}`, "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "dae9e3d3-6b6c-4fde-b298-ada2806ae563", null, spinnerMovGen);
 }
 
 async function upcomingMovies() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-movies", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "4f700f4a-4bd2-4604-8d5b-7b5e4c976c65", null, spinnerUpcoming, spinnerUpcomingMov);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-movies", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "4f700f4a-4bd2-4604-8d5b-7b5e4c976c65", null, spinnerUpcoming, spinnerUpcomingMov);
 }
 
 async function upcomingSeries() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-tv-shows", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "ee6324b5-b074-419b-ac03-9b818d30321f", null, spinnerUpcoming, spinnerUpcomingSer);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/upcoming-tv-shows", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "ee6324b5-b074-419b-ac03-9b818d30321f", null, spinnerUpcoming, spinnerUpcomingSer);
 }
 
 async function getMovieNews() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-movie-news", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "9f3f88f2-24e7-486e-8360-0c8d1f223079", null, spinnerNews, spinnerNewsMov);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-movie-news", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "9f3f88f2-24e7-486e-8360-0c8d1f223079", null, spinnerNews, spinnerNewsMov);
 }
 
 async function getCelebritiesNews() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-celebrities-news", "vb17XpacdeHqjKc3C76q-BBbHevW-DlOgQ99QbZHU9IBn9SoRU", "310bc946-0139-4f0d-a955-1f7ab9e122c9", null, spinnerNews, spinnerNewCel);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-celebrities-news", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "310bc946-0139-4f0d-a955-1f7ab9e122c9", null, spinnerNews, spinnerNewCel);
 }
 
 async function getBornToday() {
     const today = new Date();  
     const month = today.getMonth() + 1; 
     const date = today.getDate(); 
-    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-born-by-date?month=${month}&date=${date}`, "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "8d95029b-93c4-47f8-aff1-b5be77d700d9", null, spinnerBorn);
+    return apiRequest("GET", `https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/get-born-by-date?month=${month}&date=${date}`, "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "8d95029b-93c4-47f8-aff1-b5be77d700d9", null, spinnerBorn);
 }
 
 async function getTop250Movies() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-250-movies", "FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp", "d3ee0b1f-e51c-46bc-99eb-c660726b0a1b", null, spinnerTop);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-250-movies", "tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P", "d3ee0b1f-e51c-46bc-99eb-c660726b0a1b", null, spinnerTop);
 }
 
 async function getTopBoxOffice() {
-    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-box-office","FVxQheBn3q1hsZxJo3AN-CZenfPTVaXzhUvRlvRqhJ9n3YyGGp","5122e0f8-a949-45a9-aedf-5eaf61c6085b", null, spinnerBoxOffice);
+    return apiRequest("GET", "https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-box-office","tDie4yZoM6u8sVs7ZXvjL8uKU4gnY1e7x4iLlL9GK40ViNIl7P","5122e0f8-a949-45a9-aedf-5eaf61c6085b", null, spinnerBoxOffice);
 }
 
 export {
